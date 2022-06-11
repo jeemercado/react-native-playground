@@ -17,3 +17,4 @@
 5. [Fixed Android fullscreen issue](https://github.com/jeemercado/react-native-playground/commit/9e6c5bfa2fe0d534b443dd250a825542439da07a)
 6. [Setup Custom Fonts](https://github.com/jeemercado/react-native-playground/commit/17607d6f762fbb2d86fa38f868c526c85faec0f5)
    - [Additional Resources](https://github.com/jsamr/react-native-font-demo)
+7. [Added env.d.ts for images import]()
