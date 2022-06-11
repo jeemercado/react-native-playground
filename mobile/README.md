@@ -13,7 +13,7 @@
    (_Date Updated: June 11, 2022_)
 
 4. [Setup eslint, prettier, stylelint, babel.config.js, metro.config.js, react-native.config.js](https://github.com/jeemercado/react-native-playground/commit/68e7551a358a216f09dcab83fc30fc48d5d4d54e)
-   [Added missing dependencies for eslint]()
+   [Added missing dependencies for eslint](https://github.com/jeemercado/react-native-playground/commit/64029c941e118df63648e2a24c9732a9a7b151ed)
 5. [Fixed Android fullscreen issue](https://github.com/jeemercado/react-native-playground/commit/9e6c5bfa2fe0d534b443dd250a825542439da07a)
 6. [Setup Custom Fonts](https://github.com/jeemercado/react-native-playground/commit/17607d6f762fbb2d86fa38f868c526c85faec0f5)
    - [Additional Resources](https://github.com/jsamr/react-native-font-demo)
