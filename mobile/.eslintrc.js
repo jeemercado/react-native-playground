@@ -234,5 +234,8 @@ module.exports = {
       },
       typescript: {},
     },
+    react: {
+      version: 'detect',
+    },
   },
 };
