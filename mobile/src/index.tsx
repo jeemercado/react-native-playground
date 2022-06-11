@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   SafeAreaView,
   ScrollView,
@@ -8,6 +8,7 @@ import {
   View,
 } from 'react-native';
 import 'react-native-gesture-handler';
+import RNBootSplash from 'react-native-bootsplash';
 
 import { Colors, Header, LearnMoreLinks } from 'react-native/Libraries/NewAppScreen';
 
@@ -17,6 +18,14 @@ function Application() {
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
+
+  async function hideSplashScreen() {
+    await RNBootSplash.hide({ fade: true });
+  }
+
+  useEffect(() => {
+    hideSplashScreen();
+  }, []);
 
   return (
     <SafeAreaView style={backgroundStyle}>
@@ -43,24 +52,5 @@ function HeadlessCheck({ isHeadless }: any) {
 
   return <Application />;
 }
-
-const styles = StyleSheet.create({
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-});
 
 export default HeadlessCheck;
