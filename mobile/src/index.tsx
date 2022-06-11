@@ -1,23 +1,10 @@
 import React, { useEffect } from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  StatusBar,
-  StyleSheet,
-  useColorScheme,
-  View,
-} from 'react-native';
-import 'react-native-gesture-handler';
+import { SafeAreaView, StatusBar, Text, useColorScheme } from 'react-native';
 import RNBootSplash from 'react-native-bootsplash';
-
-import { Colors, Header, LearnMoreLinks } from 'react-native/Libraries/NewAppScreen';
+import 'react-native-gesture-handler';
 
 function Application() {
   const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
 
   async function hideSplashScreen() {
     await RNBootSplash.hide({ fade: true });
@@ -28,18 +15,9 @@ function Application() {
   }, []);
 
   return (
-    <SafeAreaView style={backgroundStyle}>
+    <SafeAreaView>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <ScrollView contentInsetAdjustmentBehavior="automatic" style={backgroundStyle}>
-        <Header />
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}
-        >
-          <LearnMoreLinks />
-        </View>
-      </ScrollView>
+      <Text>React Native Playground</Text>
     </SafeAreaView>
   );
 }
