@@ -1,7 +1,10 @@
 import React, { useEffect } from 'react';
 import { SafeAreaView, StatusBar, Text, useColorScheme } from 'react-native';
 import RNBootSplash from 'react-native-bootsplash';
+import EStyleSheet from 'react-native-extended-stylesheet';
 import 'react-native-gesture-handler';
+
+const styles = EStyleSheet.create({});
 
 function Application() {
   const isDarkMode = useColorScheme() === 'dark';
